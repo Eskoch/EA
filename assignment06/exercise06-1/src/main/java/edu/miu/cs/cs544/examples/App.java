@@ -31,9 +31,9 @@ public class App {
 			Doctor doctor2 = new Doctor("Brain", "Tag", "Sie");
 			Doctor doctor3 = new Doctor("Heart", "Alpha", "Bravo");
 			
-			Patient patient1 = new Patient("John");
-			Patient patient2 = new Patient("Dalton");
-			Patient patient3 = new Patient("Henry");
+			Patient patient1 = new Patient("John", "Ab street", "1000", "Fairfield");
+			Patient patient2 = new Patient("Dalton", "Ba street", "2000", "NY");
+			Patient patient3 = new Patient("Henry", "Cc street", "3000", "Harlem");
 			
 			Payment payment1 = new Payment(LocalDate.now(), 80);
 			Payment payment2 = new Payment(LocalDate.now(), 450);
@@ -53,9 +53,9 @@ public class App {
 			System.out.println("\n------------------------Saving data------------------------------");
 			
 			//save doctor
-			session.persist(doctor1);
-			session.persist(doctor2);
-			session.persist(doctor3);
+			session.persist(appointment1);
+			session.persist(appointment2);
+			session.persist(appointment2);
 			
 			tx.commit();
 			

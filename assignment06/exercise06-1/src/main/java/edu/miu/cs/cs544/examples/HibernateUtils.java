@@ -28,7 +28,7 @@ public class HibernateUtils {
                 
                 //mysql 
                 settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver"); 
-                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/TestDB"); 
+                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/exercise06"); 
                 settings.put(Environment.USER, "root"); 
                 settings.put(Environment.PASS, "changed to new"); 
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");

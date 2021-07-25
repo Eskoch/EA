@@ -2,6 +2,8 @@ package edu.miu.cs.cs544.examples;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,10 +24,15 @@ public class Appointment {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	private LocalDate appDate;
+	
+	@ManyToOne(cascade={CascadeType.ALL})
+	@JoinColumn
 	private Patient patient;
+	
+	@Embedded
 	private Payment payment;
 	
-	@ManyToOne
+	@ManyToOne(cascade={CascadeType.ALL})
 	@JoinColumn
 	private Doctor doctor;
 
