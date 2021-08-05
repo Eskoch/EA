@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "countryRegionService.passowrd",
+      "type": "java.lang.String",
+      "description": "Description for countryRegionService.passowrd."
+  }
+] }
